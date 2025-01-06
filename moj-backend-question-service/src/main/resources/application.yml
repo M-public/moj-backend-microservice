@@ -31,6 +31,11 @@ spring:
     multipart:
       # 大小限制
       max-file-size: 10MB
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
 server:
   address: 0.0.0.0
   port: 8103
@@ -40,6 +45,7 @@ server:
     session:
       cookie:
         max-age: 2592000
+        path: /api
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
@@ -52,3 +58,5 @@ mybatis-plus:
 # 代码沙箱类型配置
 codesandbox:
   type: remote
+knife4j:
+  enable: true

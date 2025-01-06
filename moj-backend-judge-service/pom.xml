@@ -44,6 +44,14 @@
             <artifactId>moj-backend-service-client</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+        <!--knife4j 框架 实现文档聚合-->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
+            <version>4.4.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
